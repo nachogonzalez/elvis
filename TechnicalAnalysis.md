@@ -25,7 +25,20 @@
 ## Databases
 
 ### LinksDB
-    - links.xlsx
-
+#### links.xlsx
+    - Tab: dashboard
+        - totalNumber
+    - Tab: links
+        - link
+        - dateAdded
+        - processed
+        - dateProcessed
 ### EmailsDB
-    - emails.xlsx
+#### emails.xlsx
+    - Tab: dashboard
+        - totalNumer
+        - domainsNumber
+    - Tab: emails
+        - email
+        - domain
+        - dateAdded
