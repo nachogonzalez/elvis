@@ -24,7 +24,6 @@
     2. Parse the html file
     3. Update EmailsDB
 ## Databases
-
 ### LinksDB
 #### links.xlsx
     - Tab: dashboard
