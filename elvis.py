@@ -5,7 +5,10 @@ Created: February 28, 2024
 Description: Flow controller
 """
 
-from dbutils import initializeDBs
+import dbutils
+import os
 from loguru import logger
 
-logger.debug("Log test")
+logger.info("Start elvis.py")
+
+dbutils.initializeDBs()
