@@ -1,6 +1,9 @@
 # ELVIS - Technical Analysis
 
 ## Modules
+### ELVIS
+    - elvis.py
+    - Flow controller
 ### Dyson
     - dyson.py
     - This module is the agent that gets the html files to analyze
