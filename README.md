@@ -3,7 +3,7 @@ Email Light Visualizer Interface System
 
 ## Functionalities ##
 
-- Get an HTML file
-    - Parse it and get:
-        - Links: store them in LinksDB
-        - Email addresses: store them in EmailsDB
+1. Get an HTML file
+    1. Parse it and get:
+        1. Links: store them in LinksDB
+        2. Email addresses: store them in EmailsDB
