@@ -1,14 +1,15 @@
 # ELVIS - Technical Analysis
 
 ## Modules
-
 ### Dyson
     - dyson.py
     - This module is the agent that gets the html files to analyze
-
 ### Analyzer
     - analyzer.py
-
+    - HTML file parser
+### DB Utils
+    - dbutils.py
+    - Module that provides tools to manage the different databases
 ## Workflows
 ### dyson.py
     1. Get the first link of LinksDB
