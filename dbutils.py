@@ -26,37 +26,27 @@ def excel_file_exists(file_path):
 
 
 def create_empty_excel_database(file_name):
-
     """
     Create an empty Excel database at the specified file path.
 
     Parameters:
     - file_path (str): The path where the Excel file will be saved.
     """
-
     logger.info("Start create_empty_excel module")
     logger.info("Parameter file_name: " + file_name)
-
     file_path = file_name
 
-    logger.debug("Comprobamos que " + file_name + " existe")
     if excel_file_exists(file_name):        
-        logger.debug("The Excel file " + file_name + " exists.")
+        logger.info("The Excel file " + file_name + " exists, so we don't create it again.")
     else:
-        logger.debug("The Excel file " + file_name + " does not exist, so we create it.")
+        logger.info("The Excel file " + file_name + " does not exist, so we create it.")
         # We create the workbook
         workbook = openpyxl.Workbook()
         # We get the active sheet
         sheet = workbook.active
         # We save the file
         workbook.save(file_name)
-
         logger.info("Excel file created successfuly: " + file_name)
-
-    
-
-
-
 
 def initializeDBs():
     """
@@ -66,11 +56,10 @@ def initializeDBs():
     
     """
     logger.info("Start initializeDBs")
-
-
-    
+    # Definition of the databases names
     linksDBname = "links.xlsx"
     emailsDBname = "emails.xlsx"
+    # Check that databases exist. If not, is the first time we run the agent, so we create them
     create_empty_excel_database(linksDBname)
     logger.info("Links DB initialized")
     create_empty_excel_database(emailsDBname)
