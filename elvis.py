@@ -12,3 +12,4 @@ from loguru import logger
 logger.info("Start elvis.py")
 
 dbutils.initializeDBs()
+
